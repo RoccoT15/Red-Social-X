@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Red Social</title>
+</head>
+<body>
+
+    <h1>Red Social X</h1>
+    <h2>¿En que piensas?</h2>
+    <form id="postForm" onsubmit="event.preventDefault(); postData()">
+        <label for="title">Titulo: </label>
+        <input type="text" id="postTitle" required>
+        <label for="postBody">Comentario: </label>
+        <textarea type="text" id="postBody" required></textarea>
+        <button type="submit">Enviar</button>    
+    </form>
+    <h2>Ver posteos</h2>
+    <button onclick="getData()">Ver posteos</button>
+    <ul id="postList"></ul>
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
